@@ -4,14 +4,11 @@
 # Author: 0312birdzhang
 #=================================================
 
-name: Build SailfishOS dhd
+name: Build SailfishOS dhd-sagit
 
-on: 
-  release:
-    types: [published]
-  push:
-    branches: 
-      - master
+on:
+  repository_dispatch:
+  workflow_dispatch:
 
 jobs:
 
